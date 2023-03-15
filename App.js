@@ -1,13 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <ScrollView>
+      <Text>lol</Text>
+       <Image style={{width: 300, height: 300,}} source={require('./assets/infamous.png')} />
+       <Image style={{width: 300, height: 300,}} source={require('./assets/undertale_p6z2.jpg')} />
+       <Image style={{width: 300, height: 300,}} source={require('./assets/undertale_p6z2.jpg')} />
+       <Image style={{width: 300, height: 300,}} source={require('./assets/undertale_p6z2.jpg')} />
+       <Image style={{width: 300, height: 300,}} source={require('./assets/undertale_p6z2.jpg')} />
+
+
+    </ScrollView>
+    
+  );  
 }
 
 const styles = StyleSheet.create({
@@ -18,3 +25,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+// <Image style={{width: 300, height: 300,}} source={require('./assets/infamous.png')} />
+// <Image style={{width: 300, height: 300,}} source={require('./assets/undertale_p6z2.jpg')} />
+
+// style={styles.container}
